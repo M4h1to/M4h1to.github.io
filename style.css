@@ -1,0 +1,66 @@
+/* General Reset */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: white;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom right, #1e90ff, #7b61ff);
+    color: white;
+}
+header#hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+header#hero .btn:hover {
+    background: #7b61ff;
+    transform: scale(1.1);
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+section#contact .social-links {
+    margin-top: 20px;
+}
+section#contact .social-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background: #1e90ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+section#contact .social-btn:hover {
+    background: #7b61ff;
+    transform: scale(1.1);
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #000428;
+}
