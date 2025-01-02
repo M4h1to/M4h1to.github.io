@@ -4,23 +4,27 @@ body, h1, h2, p, a {
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #000428, #004e92);
+    background: linear-gradient(to bottom, #000428, #004e92); /* Keeps the gradient background */
     color: white;
     line-height: 1.6;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 header#hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom right, #1e90ff, #7b61ff);
+    background: linear-gradient(to bottom right, #1e90ff, #7b61ff); /* Gradient background for Hero */
     color: white;
 }
+
 header#hero .btn {
     display: inline-block;
     margin-top: 20px;
@@ -34,17 +38,22 @@ header#hero .btn {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 header#hero .btn:hover {
     background: #7b61ff;
     transform: scale(1.1);
 }
+
 section {
     padding: 50px 20px;
     text-align: center;
+    background: transparent;  /* Remove any background color for sections */
 }
+
 section#contact .social-links {
     margin-top: 20px;
 }
+
 section#contact .social-btn {
     display: inline-block;
     margin: 0 10px;
@@ -55,10 +64,12 @@ section#contact .social-btn {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 section#contact .social-btn:hover {
     background: #7b61ff;
     transform: scale(1.1);
 }
+
 footer {
     text-align: center;
     padding: 20px 0;
