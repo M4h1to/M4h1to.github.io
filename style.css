@@ -1,66 +1,139 @@
-/* General Reset */
+/* Resetting some default styles */
 body, h1, h2, p, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #000428, #004e92);
+    background: linear-gradient(135deg, #1e90ff, #7b61ff, #000428);
     color: white;
     line-height: 1.6;
+    overflow-x: hidden;
 }
+
+/* Container to align content centrally */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Hero Section */
 header#hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom right, #1e90ff, #7b61ff);
-    color: white;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Typing effect for the tagline */
+#tagline {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    border-right: 3px solid #fff;
+    animation: typing 4s steps(30) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Smooth Scroll Button */
 header#hero .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    color: white;
     background: #1e90ff;
+    color: white;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
+
 header#hero .btn:hover {
-    background: #7b61ff;
     transform: scale(1.1);
+    background: #7b61ff;
 }
+
+/* About Section */
 section {
     padding: 50px 20px;
     text-align: center;
 }
-section#contact .social-links {
+
+section#about {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Social Buttons */
+.social-links {
     margin-top: 20px;
 }
-section#contact .social-btn {
+
+.social-btn {
     display: inline-block;
-    margin: 0 10px;
-    padding: 10px 15px;
-    background: #1e90ff;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    margin: 0 15px;
+    padding: 15px;
+    background: transparent;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
-section#contact .social-btn:hover {
-    background: #7b61ff;
-    transform: scale(1.1);
+
+.social-btn img {
+    width: 40px;
+    height: 40px;
 }
+
+.social-btn:hover {
+    transform: scale(1.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
     background: #000428;
+}
+
+/* Hidden 404 Page */
+.hidden {
+    display: none;
+}
+
+#errorPage {
+    text-align: center;
+    padding: 50px 20px;
+    background: #000428;
+    color: white;
+}
+
+/* Fade between sections */
+section {
+    animation: fadein 1s ease-in-out;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
