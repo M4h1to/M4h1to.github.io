@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4h1to | Developer</title>
+    <title>Portfolio | M4h1to</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="content">
-            <h1 class="tagline">Crafting Code, Securing the Future</h1>
-            <a href="#about" class="btn">Explore My Work</a>
+    <header id="hero">
+        <div class="container">
+            <h1 id="tagline"></h1>
+            <a href="#about" class="btn">Get Started</a>
         </div>
-    </section>
+    </header>
 
-    <!-- About Me Section -->
     <section id="about">
-        <div class="content">
+        <div class="container">
             <h2>About Me</h2>
-            <p>I'm a beginner developer exploring the realms of cybersecurity and computer science, eager to learn and grow.</p>
+            <p>
+                I'm a beginner developer exploring the realms of cybersecurity and computer science. 
+                My journey is fueled by curiosity and a passion for learning.
+            </p>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
-        <div class="content">
+        <div class="container">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:M4hitoOfficial@gmail.com">M4hitoOfficial@gmail.com</a></p>
             <div class="social-links">
@@ -42,10 +42,16 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>Crafted with 💙 by M4h1to</p>
     </footer>
+
+    <!-- 404 Page (Hidden) -->
+    <div id="errorPage" class="hidden">
+        <h2>Oops! It seems you’re lost in cyberspace.</h2>
+        <p>Don't worry, we all get lost sometimes. Try going back to the main page.</p>
+        <a href="index.html">Back to Home</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
