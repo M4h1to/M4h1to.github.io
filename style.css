@@ -7,7 +7,7 @@ body, h1, h2, p, a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #000428, #004e92); /* Keeps the gradient background */
+    background: linear-gradient(to bottom, #000428, #004e92);
     color: white;
     line-height: 1.6;
 }
@@ -21,7 +21,7 @@ body {
 header#hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom right, #1e90ff, #7b61ff); /* Gradient background for Hero */
+    background: linear-gradient(to bottom right, #1e90ff, #7b61ff);
     color: white;
 }
 
@@ -47,27 +47,25 @@ header#hero .btn:hover {
 section {
     padding: 50px 20px;
     text-align: center;
-    background: transparent;  /* Remove any background color for sections */
+    background: transparent;
 }
 
 section#contact .social-links {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 section#contact .social-btn {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 15px;
-    background: #1e90ff;
+    font-size: 2rem;
     color: white;
-    border-radius: 5px;
-    text-decoration: none;
     transition: all 0.3s ease;
 }
 
 section#contact .social-btn:hover {
-    background: #7b61ff;
-    transform: scale(1.1);
+    color: #1e90ff;
+    transform: scale(1.2);
 }
 
 footer {
